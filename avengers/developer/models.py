@@ -5,7 +5,7 @@ from django.db import models
 class Review(models.Model):
     rating = models.CharField(max_length=50)
     review = models.TextField()
-    review_time = models.DateTimeField(auto_now=True, auto_now_add=True)
+    review_time = models.DateTimeField(auto_now=True)
 
 
 class Developer(models.Model):
